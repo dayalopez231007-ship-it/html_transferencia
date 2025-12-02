@@ -1,0 +1,214 @@
+/* --------------------------------------------------
+      ESTILOS GENERALES – PALETA SUAVE Y FEMENINA
+---------------------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif; /* Fuente más elegante */
+}
+
+body {
+  background: linear-gradient(to bottom right, #ffeef6, #f3e8ff); 
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Sombra suave global */
+.shadow {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Colores principales */
+:root {
+  --rosa: #f7a8c4;
+  --rosasuave: #ffd6e7;
+  --lavanda: #c8b6ff;
+  --lavandas2: #e3dcff;
+  --morado-suave: #8661c1;
+  --texto-oscuro: #3a3a3a;
+}
+
+/* --------------------------------------------------
+                   HEADER
+---------------------------------------------------*/
+
+header {
+  background: linear-gradient(to right, var(--rosa), var(--lavanda));
+  color: white;
+  padding: 35px;
+  text-align: center;
+  border-bottom: 6px solid var(--morado-suave);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+/* NAV - MENÚ SUPERIOR */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 100px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 6px 12px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+/* --------------------------------------------------
+                    ASIDE
+---------------------------------------------------*/
+
+aside {
+  background: var(--lavandas2);
+  padding: 20px;
+  width: 220px;
+  position: fixed;
+  top: 160px;
+  left: 0;
+  border-radius: 0 15px 15px 0;
+  border-left: 5px solid var(--lavanda);
+  box-shadow: 3px 3px 15px rgba(0,0,0,0.15);
+}
+
+aside ul {
+  list-style: none;
+}
+
+aside li {
+  margin-bottom: 15px;
+}
+
+aside a {
+  text-decoration: none;
+  color: var(--morado-suave);
+  font-weight: 600;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+aside a:hover {
+  color: var(--rosa);
+  padding-left: 8px;
+}
+
+/* --------------------------------------------------
+                CONTENIDO PRINCIPAL
+---------------------------------------------------*/
+
+main {
+  margin-left: 260px;
+  padding: 40px;
+}
+
+/* Tarjeta de cada artículo */
+article {
+  background: white;
+  padding: 30px;
+  margin-bottom: 35px;
+  border-radius: 18px;
+  border: 2px solid var(--rosasuave);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+  transition: 0.25s;
+}
+
+article:hover {
+  transform: translateY(-3px);
+}
+
+/* TITULOS */
+article h1 {
+  color: var(--morado-suave);
+  margin-bottom: 18px;
+  font-size: 22px;
+  border-left: 6px solid var(--rosa);
+  padding-left: 10px;
+}
+
+/* IMÁGENES, VIDEOS Y AUDIOS */
+article img,
+article video,
+article audio {
+  display: block;
+  margin: 15px auto;
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+}
+
+/* BOTONES */
+article a {
+  display: inline-block;
+  margin-top: 12px;
+  background: var(--rosa);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+article a:hover {
+  background: var(--morado-suave);
+  transform: scale(1.05);
+}
+
+/* --------------------------------------------------
+                SECCIÓN REDES SOCIALES
+---------------------------------------------------*/
+
+section {
+  background: white;
+  margin: 40px;
+  padding: 30px;
+  border-radius: 16px;
+  border: 2px solid var(--lavanda);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+section h2 {
+  color: var(--morado-suave);
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+section ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+section a {
+  text-decoration: none;
+  color: var(--rosa);
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+section a:hover {
+  color: var(--morado-suave);
+  transform: scale(1.1);
+}
